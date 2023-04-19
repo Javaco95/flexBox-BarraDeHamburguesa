@@ -1,0 +1,116 @@
+body {
+   margin: 0%;
+   padding: 0%;
+}
+
+
+.navbar{
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: wheat;
+    display: flex;   
+}
+
+.navbar-brand {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    padding: 0.2em 0.7em;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.navbar-nav{
+    margin: 0%;
+
+}
+
+.navbar .navbar-nav .nav-item {
+    display: inline;
+    list-style: none;
+
+}
+
+.navbar .navbar-nav .nav-item a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0.9em;
+    color: whitesmoke;
+    transition: .1s;
+    
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+    background-color: #cea135;
+    
+}
+
+.toggle-collapse {
+    float: left;
+    width: 45px;
+    height: 32px;
+    margin: 0.4em 0.7em;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+    display: none;
+    transition: .1s;
+}
+
+.toggle-collapse:hover {
+    background-color: goldenrod;
+}
+
+
+
+.nav3 {
+    padding-left: 1020px; 
+}
+
+
+
+@media screen and (max-width:900px){
+    .navbar-brand{
+        display: inline-block;
+        
+    }
+    
+    .toggle-collapse {
+        display: inline-block;
+    }
+
+    .navbar-nav{
+        color: white;
+        padding: 0%;
+    }
+
+    .navbar  .navbar-nav  .nav-item {
+        display: block;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        height: 0vh;
+        transition: all 499ms ease;
+    }
+
+    .nav3 {
+        margin: -05px;
+        background-color:black ;
+        
+    }
+
+    .collapse{
+        height: 20vh;
+
+    }
+    
+}
